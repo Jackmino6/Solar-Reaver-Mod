@@ -17,6 +17,54 @@ class Cfgweapons
 	class TIOW_MK6Helmet_UM;
 	class TIOW_MK7Helmet_UM;
 	class TIOW_MK7KnightHelmet_UM;
+	class Primaris_Dos_Helm_Base;
+	
+	class Phalanx_Warder_Helmet_Base : Primaris_Dos_Helm_Base
+	{
+		scope = 1;
+		scopeCurator = 1;
+		scopeArsenal = 1;
+		class Iteminfo;
+	};
+	class Phalanx_Warder_Helmet_Jackmino : Phalanx_Warder_Helmet_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		author="Jackmino"
+		picture="phalanxhelmet\Textures\PhalanxIcon.paa"
+		displayName = "Phalanx Warder Helmet (Placeholder)"
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		uniformModel = "phalanxhelmet\Models\Phalanx_Warder_Helmet.p3d"
+		 hiddenSelections[]=
+        {
+            "camo","Visor"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "phalanxhelmet\Textures\Phalanx.paa",
+			"phalanxhelmet\Textures\Phalanx.paa"
+        };
+		hiddenSelectionsMaterials[] = {"\phalanxhelmet\Materials\Phalanx.rvmat","a3\data_f\lights\car_panels.rvmat"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel= "phalanxhelmet\Models\Phalanx_Warder_Helmet.p3d"
+            hiddenSelections[]=
+			{
+				"camo","Visor"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"phalanxhelmet\Textures\Phalanx.paa",
+				"phalanxhelmet\Textures\Phalanx.paa"
+			};
+			hiddenSelectionsMaterials[] = {"\phalanxhelmet\Materials\Phalanx.rvmat","a3\data_f\lights\car_panels.rvmat"};
+        };
+	};
+	class Phalanx_Warder_Helmet_Jackmino_dp : Phalanx_Warder_Helmet_Jackmino
+	  {
+		scopeArsenal = 1
+	  };
 	
 	class SR_MK2_Helmet_Black : TIOW_MK2Helmet_UM
 	{
