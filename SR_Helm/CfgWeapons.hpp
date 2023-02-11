@@ -31,34 +31,34 @@ class Cfgweapons
 		scope = 2;
 		scopeArsenal = 2;
 		author="Jackmino"
-		picture="phalanxhelmet\Textures\PhalanxIcon.paa"
+		picture="SR_Helm\Textures\PhalanxIcon.paa"
 		displayName = "Phalanx Warder Helmet (Placeholder)"
 		optreVarietys[] = {"","_dp","_broken"};
 		optreHUDStyle = "ODST_1";
-		uniformModel = "phalanxhelmet\Models\Phalanx_Warder_Helmet.p3d"
+		uniformModel = "SR_Helm\Models\Phalanx_Warder_Helmet.p3d"
 		 hiddenSelections[]=
         {
             "camo","Visor"
         };
         hiddenSelectionsTextures[]=
         {
-            "phalanxhelmet\Textures\Phalanx.paa",
-			"phalanxhelmet\Textures\Phalanx.paa"
+            "SR_Helm\Textures\Phalanx.paa",
+	    "SR_Helm\Textures\Phalanx.paa"
         };
-		hiddenSelectionsMaterials[] = {"\phalanxhelmet\Materials\Phalanx.rvmat","a3\data_f\lights\car_panels.rvmat"};
+		hiddenSelectionsMaterials[] = {"\SR_Helm\Materials\Phalanx.rvmat","a3\data_f\lights\car_panels.rvmat"};
         class ItemInfo: ItemInfo
         {
-            uniformModel= "phalanxhelmet\Models\Phalanx_Warder_Helmet.p3d"
+            uniformModel= "SR_Helm\Models\Phalanx_Warder_Helmet.p3d"
             hiddenSelections[]=
 			{
 				"camo","Visor"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"phalanxhelmet\Textures\Phalanx.paa",
-				"phalanxhelmet\Textures\Phalanx.paa"
+				"SR_Helm\Textures\Phalanx.paa",
+				"SR_Helm\Textures\Phalanx.paa"
 			};
-			hiddenSelectionsMaterials[] = {"\phalanxhelmet\Materials\Phalanx.rvmat","a3\data_f\lights\car_panels.rvmat"};
+			hiddenSelectionsMaterials[] = {"\SR_Helm\Materials\Phalanx.rvmat","a3\data_f\lights\car_panels.rvmat"};
         };
 	};
 	class Phalanx_Warder_Helmet_Jackmino_dp : Phalanx_Warder_Helmet_Jackmino
